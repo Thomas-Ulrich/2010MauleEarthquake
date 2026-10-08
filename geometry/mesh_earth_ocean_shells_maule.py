@@ -548,14 +548,14 @@ def generate_earth_and_sea_shells(
 if __name__ == "__main__":
     generate_earth_and_sea_shells(
         netcdf_path="/home/ulrich/work/Maule/GEBCO_23_Jun_2025_67aae380b8ec/gebco_2024_n-28.0_s-45.0_w-81.0_e-64.0.nc",
-        bbox=[-76.0, -70.0, -38.5, -33.5],
+        bbox=[-79.0, -66.0, -41.0, -30.0],
         var_name="elevation",
         z_zero=-20.0,           # None to disable
         smooth_range=100.0,     # metres, None to disable
         smooth_sigma_m=1000.0,  # metres
         proj_str=PROJ_STR,
         coarsen_factor=2,
-        lc_coarse=4000.0,
+        lc_coarse=2000.0,
         lc_fine=500.0,
         earth_depth=400_000.0,
         lc_deep=50_000.0,
